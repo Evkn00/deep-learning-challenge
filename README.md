@@ -34,11 +34,13 @@ The model was reasonably successful achieving just under 73% accuracy, which gav
 
 Hyperparameter turning was selected as the best optimisation model and ranges were selected for the tuning that were likely considerably beyong the requirements, however since time and efficency are not huge factors for a model that will not be used live, the following parameters were tested:
 - Activation: 'relu','tanh','sigmoid'
-- Layers: 1 to 20 in steps of 2
-- Starting nodes: 1 to 100 in steps of 5
-- Max 20 epochs
+- Layers: 1 to 100 in steps of 10
+- Starting nodes: 1 to 100 in steps of 10
+- Max 100 epochs
   
+![image](https://github.com/Evkn00/deep-learning-challenge/assets/69624124/c5535b1e-e70c-4b7d-806d-274d3425ebb5)
 
+After nearly 500 iterations, there was only a minor increase of about 0.05% between the initial model and the tuned model. 
 
-What steps did you take in your attempts to increase model performance?
-Summary: Summarise the overall results of the deep learning model. Include a recommendation for how a
+Summary: 
+Despite almost 500 iterations of the model, only minor gains were noted, which suggests that the greatest gains may be noticed if we were to reduce the feature set and re-train the model. However, a ~73.4% accuracy when there is so many human and other factors at work is reasonably successful and only just shy of our target 75%. The model is likely fit for purpose as is, however further development is necessary if the 75% is determined to be the hard target. 
